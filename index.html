@@ -1,0 +1,19 @@
+# HARDISK-AI Main Assistant Script
+
+import time
+
+def main():
+    print("Initializing HARDISK-AI...")
+    time.sleep(1)
+    print("HARDISK-AI is online and ready to assist you!")
+
+    while True:
+        user_input = input("\nYou: ")
+        if user_input.lower() in ["exit", "quit"]:
+            print("HARDISK-AI: Goodbye!")
+            break
+
+        print(f"HARDISK-AI: Processing your request -> '{user_input}'")
+
+if __name__ == "__main__":
+    main()
